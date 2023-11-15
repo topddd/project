@@ -175,13 +175,10 @@ p {
   position: relative;
   border-radius: 25px;
   background-color: #fff;
-  /* opacity: 0.5; */
   box-shadow: 0 0 16px 3px rgba(0 0 0 / 15%);
   cursor: pointer;
-  /* margin: 30px; */
   background: url("../images/토글버튼배경.png") no-repeat center/cover;
 }
-
 .container header .btn {
   position: relative;
   font-family: "KCC-Ganpan";
@@ -192,14 +189,12 @@ p {
 }
 .btn .btn-txt .dog {
   position: absolute;
-  z-index: 9;
   left: 20px;
   top: 50%;
   transform: translateY(-50%);
 }
 .btn .btn-txt .cat {
   position: absolute;
-  /* z-index: 9; */
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
@@ -209,30 +204,39 @@ p {
   height: 40px;
   position: absolute;
   top: 50%;
-  left: 5px;
+  right: 5px;
   transform: translateY(-50%);
   border-radius: 64px;
   background: #fedd66;
-  z-index: 9;
 }
 .toggleSwitch .toggleButton::after {
-  content: "강아지";
+  content: "고양이";
   display: block;
   position: absolute;
   top: 10px;
   left: 15px;
 }
 #toggle:checked ~ .toggleSwitch .toggleButton::after {
-  content: "고양이";
+  content: "강아지";
   display: block;
   position: absolute;
   top: 10px;
   left: 17px;
 }
+#toggle:checked ~ .cat {
+  /* display: block; */
+}
+
+#toggle:checked ~ .toggleSwitch {
+  /* background: #f03d3d; */
+}
 
 #toggle:checked ~ .toggleSwitch .toggleButton {
-  left: calc(100% - 50%);
+  right: calc(100% - 50%);
   background-color: #fedd66;
+  /* background: #fedd66; */
+  /* animation: toggle; */
+  /* transform: translateX(300px); */
 }
 /* ====main==== */
 .container main .top-btn {
@@ -1399,7 +1403,7 @@ footer .container .inner2 .footer-img {
   .brand-week .more {
     display: block;
     font-size: 10px !important;
-    margin: 0 10px 10px 0 !important;
+    margin: 0 28px 10px 0 !important;
   }
   .container main .brand-week {
     margin-top: 50px;
@@ -1662,7 +1666,7 @@ footer .container .inner2 .footer-img {
 /* ============================ */
 
 /* mobile */
-@media screen and (max-width: 380px) {
+@media screen and (max-width:425px) {
   /* header */
   header .inner {
     width: 90% !important;
@@ -1677,7 +1681,7 @@ footer .container .inner2 .footer-img {
   }
   .toggleSwitch .toggleButton {
     top: 13px;
-    left: 4px;
+    right: 4px;
   }
   .toggleSwitch .toggleButton::after {
     top: 4px;
@@ -1693,19 +1697,20 @@ footer .container .inner2 .footer-img {
   /* mainbanner */
   .mainbanner .inner .slider img {
     width: 100%;
-    height: 150px;
+    height: 100%;
+    object-fit: cover;
   }
   .mainbanner {
     width: 100%;
-    height: 150px;
+    height: 198px;
   }
   .mainbanner .inner .slidercat img {
     width: 320px !important;
-    height: 150px;
+    height: 200px;
   }
   .mainbanner .bx-wrapper {
     width: 100;
-    height: 150px;
+    height: 200px;
   }
   .mainbanner .bx-wrapper .bx-pager {
     bottom: 10px;
@@ -1757,7 +1762,7 @@ footer .container .inner2 .footer-img {
   .bestitem .inner .item-img {
     width: 67px;
     height: 67px;
-    margin: 10px 30px;
+    margin: 10px 37px;
   }
   .container main .bestitem .inner .shop-now {
     width: 50px;
@@ -1803,7 +1808,7 @@ footer .container .inner2 .footer-img {
     display: none;
   }
   .container main .product .inner .discount {
-    left: 238px !important;
+    left: 267px !important;
     top: -10px !important;
   }
   .container main .product .inner .discount img {
