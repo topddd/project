@@ -1804,8 +1804,8 @@ footer .container .inner2 .footer-img {
     display: none;
   }
   .container main .product .inner .discount {
-    left: 267px !important;
-    top: -10px !important;
+    left: -14px !important;
+    top: -14px !important;
   }
   .container main .product .inner .discount img {
     width: 30px;
@@ -1983,13 +1983,13 @@ footer .container .inner2 .footer-img {
   /* bottom banner */
   .container main .bottombanner {
     margin: 0 0;
+    width: 100%;
   }
   .container main .bottombanner > p {
-    text-align: left;
-    /* text-align: center; */
-    margin: 0 135px;
+    text-align: center;
     padding: 0 0 15px 0;
     font-size: 12px;
+    width: 100%;
   }
   .container main .bottombanner .inner .left-anf img {
     width: 90px;

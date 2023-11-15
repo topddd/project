@@ -1697,7 +1697,7 @@ footer .container .inner2 .footer-img {
   /* mainbanner */
   .mainbanner .inner .slider img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
   }
   .mainbanner {
@@ -1808,8 +1808,8 @@ footer .container .inner2 .footer-img {
     display: none;
   }
   .container main .product .inner .discount {
-    left: 267px !important;
-    top: -10px !important;
+    left: -14px !important;
+    top: -14px !important;
   }
   .container main .product .inner .discount img {
     width: 30px;
@@ -1838,7 +1838,7 @@ footer .container .inner2 .footer-img {
   }
 
   .container main .product .inner .pr-up .img1:nth-child(2) span {
-    margin-top: 15px;
+    margin-top: 0px;
     display: block;
   }
   .container main .product .inner .pr-down .img1:nth-child(2) span {
@@ -1987,11 +1987,11 @@ footer .container .inner2 .footer-img {
   /* bottom banner */
   .container main .bottombanner {
     margin: 0 0;
+    width: 100%;
   }
   .container main .bottombanner > p {
-    text-align: left;
-    /* text-align: center; */
-    margin: 0 135px;
+    text-align: center;
+    width: 100%;
     padding: 0 0 15px 0;
     font-size: 12px;
   }
