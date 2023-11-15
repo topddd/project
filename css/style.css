@@ -1692,11 +1692,11 @@ footer .container .inner2 .footer-img {
   }
   /* mainbanner */
   .mainbanner .inner .slider img {
-    width: 320px;
+    width: 100%;
     height: 150px;
   }
   .mainbanner {
-    width: 320px;
+    width: 100%;
     height: 150px;
   }
   .mainbanner .inner .slidercat img {
@@ -1721,7 +1721,7 @@ footer .container .inner2 .footer-img {
   }
   /* bestitem */
   .container main .bestitem {
-    width: 320px;
+    width: 100%;
     height: 217px;
   }
   .container main .bestitem > p {
@@ -1757,7 +1757,7 @@ footer .container .inner2 .footer-img {
   .bestitem .inner .item-img {
     width: 67px;
     height: 67px;
-    margin: 10px 20px;
+    margin: 10px 30px;
   }
   .container main .bestitem .inner .shop-now {
     width: 50px;
@@ -1803,8 +1803,8 @@ footer .container .inner2 .footer-img {
     display: none;
   }
   .container main .product .inner .discount {
-    left: 230px !important;
-    top: -5% !important;
+    left: 238px !important;
+    top: -10px !important;
   }
   .container main .product .inner .discount img {
     width: 30px;
@@ -1816,6 +1816,10 @@ footer .container .inner2 .footer-img {
   }
   .container main .product .inner .pr-up {
     padding: 0 0 15px 0;
+    justify-content: space-around;
+  }
+  .container main .product .inner .pr-down {
+    justify-content: space-around;
   }
   .container main .product .inner .pr-up .img1 .hoverbox {
     width: 80px;
@@ -1829,7 +1833,7 @@ footer .container .inner2 .footer-img {
   }
 
   .container main .product .inner .pr-up .img1:nth-child(2) span {
-    margin-top: 23px;
+    margin-top: 15px;
     display: block;
   }
   .container main .product .inner .pr-down .img1:nth-child(2) span {
@@ -1858,7 +1862,9 @@ footer .container .inner2 .footer-img {
   }
   .container main .product .inner .img1 {
     width: 80px;
-    margin-right: 40px;
+  }
+  .container main .product .inner .mobile {
+    display: none;
   }
   .container main .product .inner .img1 a {
     font-size: 8px;
@@ -1918,10 +1924,16 @@ footer .container .inner2 .footer-img {
   .product .more {
     display: block !important;
     font-size: 10px !important;
-    margin: 0 10px 10px 0 !important;
+    margin: 0 28px 10px 0 !important;
   }
+  .container main .brand-week .inner .img-box .img1 {
+    width: 80px;
+}
   .container main .brand-week .inner .img-box {
-    gap: 40px;
+    justify-content: space-around;
+  }
+  .container main .brand-week .inner .img-box .mobile {
+    display: none;
   }
   .container main .brand-week .inner .img-box .img1 .hoverbox {
     width: 80px;
